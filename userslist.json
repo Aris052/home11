@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "name": "Anna",
+      "surname": "Ghazaryan",
+      "age": 24,
+      "salary": 100000,
+      "id": "e74a"
+    },
+    {
+      "id": "7640",
+      "name": "Artur",
+      "surname": "Gevorgyan",
+      "age": 45,
+      "salary": 160000
+    },
+    {
+      "id": "a6c5",
+      "name": "Janna",
+      "surname": "Harutunyan",
+      "age": 25,
+      "salary": 450000
+    },
+    {
+      "id": "b9bf",
+      "name": "Liza",
+      "surname": "Zakaryan",
+      "age": 21,
+      "salary": 800000
+    }
+  ]
+}
