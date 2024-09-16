@@ -32,37 +32,35 @@ export const User = () => {
         navigate("/")
     }
 
-    return (
-        <div className='add-edit-user'>
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <h2>Edit User</h2>
+    return <div className='add-edit-user'>
+        <form onSubmit={handleSubmit(onSubmit)}>
+            <h2>Edit User</h2>
 
-                <label>Name:</label>
-                <input {...register("name", { required: "Name is required" })} />
-                {errors.name && <p>{errors.name.message}</p>}
+            <label>Name:</label>
+            <input {...register("name", { required: "Name is required" })} />
+            {errors.name && <p>{errors.name.message}</p>}
 
-                <br />
+            <br />
 
-                <label>Surname:</label>
-                <input {...register("surname", { required: "Surname is required" })} />
-                {errors.surname && <p>{errors.surname.message}</p>}
+            <label>Surname:</label>
+            <input {...register("surname", { required: "Surname is required" })} />
+            {errors.surname && <p>{errors.surname.message}</p>}
 
-                <br />
+            <br />
 
-                <label>Age:</label>
-                <input type="number" {...register("age", { required: "Age is required", valueAsNumber: true })} />
-                {errors.age && <p>{errors.age.message}</p>}
+            <label>Age:</label>
+            <input type="number" {...register("age", { required: "Age is required", valueAsNumber: true })} />
+            {errors.age && <p>{errors.age.message}</p>}
 
-                <br />
+            <br />
 
-                <label>Salary:</label>
-                <input type="number" {...register("salary", { required: "Salary is required", valueAsNumber: true })} />
-                {errors.salary && <p>{errors.salary.message}</p>}
+            <label>Salary:</label>
+            <input type="number" {...register("salary", { required: "Salary is required", valueAsNumber: true })} />
+            {errors.salary && <p>{errors.salary.message}</p>}
 
-                <br />
+            <br />
 
-                <button type="submit">Edit</button>
-            </form>
-        </div>
-    )
+            <button type="submit">Edit</button>
+        </form>
+    </div>
 }
